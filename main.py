@@ -3,7 +3,7 @@ import random;
 image_path = r'Old _anua_ Drawing.jpg'
 
 image = cv2.imread(image_path)
-
+##attempt 2
 ##for i in range(100):
   ##  for j in range(image.shape[1]):
     ##    image[i][j] = [random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)]
