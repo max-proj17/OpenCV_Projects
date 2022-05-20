@@ -1,6 +1,6 @@
 import cv2
 
-image_path = r'Old _anua_ Drawing.jpg'
+image_path = r'proj_files/Old _anua_ Drawing.jpg'
 
 image = cv2.imread(image_path)
 
