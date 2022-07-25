@@ -30,8 +30,9 @@ while True:
     cars = tracker.detectMultiScale(bw)
 
     # Draw the squares
-    for (x, y, w, h) in cars:
+    for (i, (x, y, w, h)) in enumerate(cars):
        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
+       cv2.putText(frame, "Car #{}".format(i + 1), (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.55, (0, 0, 255), 2)
 
     # Display bw frame
     cv2.imshow('Car Detector', frame)
